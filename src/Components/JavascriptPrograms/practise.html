@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:first-child div {
+            border: 1px solid red;
+            height: 300px;
+            width: 300px;
+        }
+
+        div:first-child div div {
+            border: 1px solid greenyellow;
+            height: 200px;
+            width: 200px;
+        }
+
+        div:first-child div div div {
+            border: 1px solid burlywood;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <h1>hello master</h1>
+                </div>
+            </div>
+        </div>
+        <div id="text">
+            <h1>heloo Miss how are you</h1>
+        </div>
+    </div>
+    <button id="color" onclick="addcolor()">add Color</button>
+    <button onclick="textcolor()">addtextcolor</button>
+</body>
+<script>
+    function addcolor() {
+        var element = document.getElementById("color")
+        element.style.cssText = 'backgroundcolor:pink'
+    }
+    function textcolor() {
+        var change = document.getElementById("text")
+        change.style.cssText = `text-align:center;color:blue;backgroundcolor:red`
+    }
+</script>
+
+</html>
