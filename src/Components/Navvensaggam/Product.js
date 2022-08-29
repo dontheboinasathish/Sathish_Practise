@@ -6,7 +6,7 @@ function Product() {
     const [state, setState] = useState({
         products: {
             sno: 1,
-            image: 'D:/React_Application/src/Images/Watch.jpg',
+            image: './Watch.jpg',
             name: 'mi watch',
             price: 1500,
             qty: 2

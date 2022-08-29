@@ -37,11 +37,21 @@
             </div>
         </div>
         <div id="text">
-            <h1>heloo Miss how are you</h1>
+
+            <h1>heloo how are you</h1>
+
         </div>
     </div>
     <button id="color" onclick="addcolor()">add Color</button>
     <button onclick="textcolor()">addtextcolor</button>
+
+
+    <div>
+        <p>hai mama to be part of your<em id="texm"> suspence to the fabulous of this life</em> fanatastic and fabulus
+            of jenious
+        </p>
+        <button onclick="text()">em tag</button>
+    </div>
 </body>
 <script>
     function addcolor() {
@@ -51,6 +61,10 @@
     function textcolor() {
         var change = document.getElementById("text")
         change.style.cssText = `text-align:center;color:blue;backgroundcolor:red`
+    }
+    function text() {
+        x = document.getElementById("texm")
+        x.style.color = "red"
     }
 </script>
 

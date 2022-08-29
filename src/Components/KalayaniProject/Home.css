@@ -1,0 +1,21 @@
+.codex {
+    background-color: rgba(118, 169, 245, 0.801);
+    height: 100vh;
+    display: flex;
+}
+
+.hName {
+    color: palevioletred;
+}
+
+.document {
+    position: relative;
+}
+
+.addsym {
+    position: absolute;
+    left: 25px;
+    background-color: green;
+    border-radius: 5px;
+    bottom: 25px;
+}
