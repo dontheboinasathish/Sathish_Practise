@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div:first-child{
+            height: 400px;
+            width: 400px;
+            border:3px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div:first-child div{
+            height: 200px;
+            width: 200px;
+            border:2px solid gold
+        }
+           
+        div:first-child div div{
+            height: 50px;
+            width: 50px;
+            border:1px solid green;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div id="colorchange">
+        <div id="colorchange1">
+            <div onclick="sum()" id="colorchange2">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function sum(){
+        document.getElementById("colorchange").style.cssText="border:7px solid green"
+        document.getElementById("colorchange1").style.cssText="border:5px solid gold"
+        document.getElementById("colorchange2").style.cssText="border:2px solid yellow;background:red"
+        }
+    </script>
+</body>
+</html>
