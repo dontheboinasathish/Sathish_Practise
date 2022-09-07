@@ -18,13 +18,21 @@
             height: 50px;
             width: 300px;
             text-align: center;
+            font-size: 20px;
+            line-height: 75px;
         }
 
         .out {
             display: flex;
-            justify-content: center;
             justify-content: space-around;
+            margin: 30px;
 
+        }
+
+        @media (max-width:500px) {
+            .out {
+                flex-direction: column-reverse;
+            }
         }
     </style>
 </head>

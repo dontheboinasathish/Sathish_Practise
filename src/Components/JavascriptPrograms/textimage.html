@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text {
+            opacity: 0;
+        }
+
+        img {
+            opacity: 0.5;
+        }
+
+        .container {
+            position: relative;
+            border: 10px solid red;
+            height: 300px;
+            width: 300px;
+        }
+
+        .container:hover div {
+            position: absolute;
+            opacity: 1;
+            font-weight: bold;
+            left: 40%;
+            top: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="photo" src="../../Images/krish.gif" alt="krish" height="300px" width="300px">
+        <div>
+            <h1 class="text">heloo sathish</h1>
+        </div>
+    </div>
+
+</body>
+
+</html>

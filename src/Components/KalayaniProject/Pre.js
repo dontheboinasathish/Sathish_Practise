@@ -18,6 +18,7 @@ function Pre() {
                 <Button>Post</Button>
                 <Button>Pre</Button>
             </div>
+            <hr/>
         </div>
     )
 }

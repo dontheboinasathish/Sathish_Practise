@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            position: relative;
+            height: 300px;
+            width: 300px;
+            border: 10px solid black;
+
+        }
+
+        .text {
+            opacity: 0;
+        }
+
+        .image {
+            height: 300px;
+            width: 300px;
+        }
+
+        img:hover {
+            opacity: 0.5;
+        }
+
+        .container:hover div {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-weight: bold;
+            color: white;
+            opacity: 1;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/800px-Image_created_with_a_mobile_phone.png"
+            alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">Lokesh</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
