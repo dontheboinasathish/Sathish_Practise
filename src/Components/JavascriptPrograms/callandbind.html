@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url("D:/Sathish_Practise/src/Images/Dinyosar.jpeg");
+            background-size: cover;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+</head>
+
+
+<body>
+    <script>
+        // let arr = [10, 20, 30, 40, 50]
+        // sum = 0;
+        // for (i = 0; i < arr.length; i++) {
+        //     sum += arr[i]
+        //     console.log(sum)
+        // }
+
+        // var arr = ["sathish", 23, 45, 67, "hareesha", 56, 67]
+        // const [a, b, c, ...rest] = arr;
+        // console.log(arr[0]);
+        // const val = arr;
+        // console.log(val)
+
+
+        // const arr = [10, 20, 30, 40, 50, 60, 70]
+        // const [a, b, c, d] = arr
+        // console.log(a)
+
+
+        // const arr1 = {
+        //     name: "sathish",
+        //     sub: "software"
+        // }
+
+        // console.log(arr1.name)
+        // console.log(arr1.sub)
+        // console.log(arr1)
+
+        const obj = {
+            fname: "sathish",
+            Lname: "dontheboina",
+            age: 22,
+            village: "siripuram",
+            getdata1: function (roll, friend) {
+                console.log(roll)
+                console.log(friend)
+                console.log(this.fname + " " + this.Lname + " " + roll)
+            }
+
+        }
+        const obj1 = {
+            fname: "venkey",
+            Lname: "kethi",
+            age: 22,
+            village: "sirim"
+
+        }
+        const obj2 = {
+            getdata: function (roll, friend) {
+                console.log(roll)
+                console.log(friend)
+                console.log(this.fname + " " + this.Lname + " " + roll)
+            }
+        }
+        obj2.getdata.call(obj, "software", "divya")
+        obj2.getdata.apply(obj1, ["react developer", "hareesha"])
+        // obj.getdata1.bind(obj1, 2000)()
+
+
+
+    </script>
+</body>
+
+</html>
+<!-- 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <style>
+        div:first-child {
+            border: 1px solid red;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        div:first-child div {
+            border: 1px solid green;
+            width: 200px;
+            height: 200px;
+        }
+
+        div:first-child div div {
+            border: 1px solid black;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div id="elementcolor">
+        <div>
+            <div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+    </div>
+    <div>
+
+    </div>
+
+    <button onclick='Chnage()'>click</button>
+
+
+</body>
+<script>
+    function Chnage() {
+        let val = document.getElementById('elementcolor')
+        val.style.backgroundColor = 'red'
+    }
+</script>
+
+</html> -->

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        div:first-child {
+            border: 5px solid red;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div:first-child div {
+            border: 5px solid gold;
+            width: 200px;
+            height: 200px;
+        }
+
+        div:first-child div div {
+            border: 5px solid green;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div onclick="add()" id="firstdiv">
+        <div id="secounddiv">
+            <div id="thirddiv">
+            </div>
+        </div>
+    </div>
+    <div>
+
+    </div>
+    </div>
+    <script>
+        function add() {
+            document.getElementById("firstdiv").style.cssText = `border:10px solid green;`
+            document.getElementById("secounddiv").style.cssText = `border:10px solid yellow`
+            document.getElementById("thirddiv").style.cssText = `border:10px solid blue`
+            document.getElementById("thirddiv").innerHTML = "sathish"
+        }
+
+
+
+    </script>
+</body>
+
+</html>

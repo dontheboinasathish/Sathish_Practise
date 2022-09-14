@@ -19,12 +19,15 @@
     border-radius: 5px;
     bottom: 25px;
 }
-.image1{
+
+.image1 {
     margin: 10px;
 }
-.image2{
+
+.image2 {
     margin: 10px;
 }
-img1:hover{
+
+img1:hover {
     outline: 4px solid red;
 }

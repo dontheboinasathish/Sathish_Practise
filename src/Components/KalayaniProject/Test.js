@@ -12,9 +12,7 @@ function Test() {
                 <button type="button" class="btn btn-primary">Pre</button>
                 <button type="button" class="btn btn-primary">Pro</button>
             </div>
-
         </div>
     )
 }
-
-export default Test
+export default Test;

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        div {
+            height: 300px;
+            width: 300px;
+            border: 1px solid green;
+            background-color: greenyellow;
+        }
+
+        :not(div) {
+            background-color: rgb(163, 33, 33);
+        }
+    </style>
+</head>
+
+<body>
+    <marquee id="scroll" direction="down" scrollamount="20">
+        <div></div>
+    </marquee>
+</body>
+<script>
+    setTimeout(() => {
+        var x = document.getElementById("scroll")
+        x.direction = "left"
+    }, 4000)
+
+</script>
+
+</html>

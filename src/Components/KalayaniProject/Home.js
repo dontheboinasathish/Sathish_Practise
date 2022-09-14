@@ -16,10 +16,14 @@ function Home() {
     }
     return (
         <div className='codex'>
+
             <div className="container mt-5">
                 <marquee behavior="scroll" direction="row"><h1 className='hName'>Project Management</h1></marquee>
-                <div className="card-body">
-                    <button className='image1' onClick={firstImg}> <img src={image1} alt="" height="198px" /></button>
+                <div >
+                    <div className="card-body" >
+
+                        <button className='image1' onClick={firstImg}> <h3>pre</h3><img src={image1} alt="" height="198px" /></button>
+                    </div>
                     <button className='image2' onClick={secoundImg}> <img src={image1} alt="" height="198px" /></button>
                     <img src={image1} alt="" height="198px" />
                     <span className='document'>

@@ -8,19 +8,27 @@ function Pre() {
     const AddFn = () => {
         name1("/Add")
     }
+    const gotohome = () => {
+        name1("/Home")
+    }
+    const prehome = () => {
+        name1("/test")
+    }
+    const prepage = () => {
+        name1("/pre")
+    }
     return (
         <div className='pretag'>
 
             <h1>hello PrePage</h1>
             <div className='container-mt-4'>
                 <Button onClick={AddFn}>ADD</Button>
-                <Button >Home</Button>
-                <Button>Post</Button>
-                <Button>Pre</Button>
+                <Button onClick={gotohome}>Home</Button>
+                <Button onClick={prehome}>Pro</Button>
+                <Button onClick={prepage}>Test</Button>
             </div>
-            <hr/>
+            <hr />
         </div>
     )
 }
-
 export default Pre;
