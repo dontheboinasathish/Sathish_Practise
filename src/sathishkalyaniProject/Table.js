@@ -43,9 +43,6 @@ function TableData(props) {
         setModaldata(value)
         setShow(true)
     }
-
-
-
     const editsubmit = () => {
         dispatch({
             type: "edit_details",

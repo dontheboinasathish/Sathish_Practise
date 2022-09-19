@@ -86,13 +86,11 @@ export default function Myreducer(state = initialState, action = null) {
     case "formdata": {
       console.log("formdata")
       console.log(action.payload)
-
-
       // const { userList } = state
       // userList.push(action.payload)
       // console.log(userList)
       // console.log(state)
-      const newList= [...state.userList]
+      const newList = [...state.userList]
       newList.push(action.payload)
       return {
         ...state,
@@ -100,15 +98,15 @@ export default function Myreducer(state = initialState, action = null) {
       };
     }
     case "saveChanges": {
-     const projectIndx = state.userList.findIndex((each) => each.id == action.payload.id) 
-      const newList= [...state.userList]
+      const projectIndx = state.userList.findIndex((each) => each.id == action.payload.id)
+      const newList = [...state.userList]
       newList[projectIndx] = action.payload
       return {
         ...state,
         userList: newList,
       };
     }
-    
+
 
     default:
       return state;

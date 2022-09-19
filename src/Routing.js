@@ -6,6 +6,8 @@ import HandlingState from './Components/HandlingState'
 import FunCom from './Components/Navvensaggam/FunCom'
 import Countrycard from './Components/Navvensaggam/MessageCars/Countrycard'
 import Parent from './Components/Navvensaggam/MessageCars/Parent'
+import Data from './Components/ReactjsExamples/Data'
+import DataModal from './Components/ReactjsExamples/DataModal'
 import Add from './sathishkalyaniProject/Add'
 import Home from './sathishkalyaniProject/Home'
 import ModalEdit from './sathishkalyaniProject/ModalEdit'
@@ -28,6 +30,8 @@ function Routing() {
                     <Route path="/test" element={<Test />}></Route>
                     <Route path="/add" element={<Add />}></Route>
                     <Route path="/modal" element={<ModalEdit />}></Route>
+                    <Route path="/data" element={<Data />}></Route>
+                    <Route path="/modal" element={<DataModal />}></Route>
                 </Routes>
             </BrowserRouter>
         </div>
