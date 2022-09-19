@@ -23,13 +23,11 @@ function Data() {
                 <thead>
                     <tr>
                         <th>id</th>
-
                         <th>username</th>
                         <th>email</th>
                         <th>Edit</th>
                     </tr>
                 </thead>
-
                 <tbody>
                     {
                         newlist.map((each, index) => {
@@ -45,9 +43,7 @@ function Data() {
                     }
                 </tbody>
             </Table>
-
         </div>
     )
 }
-
 export default Data
