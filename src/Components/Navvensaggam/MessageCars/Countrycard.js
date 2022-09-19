@@ -1,6 +1,6 @@
 import React from 'react'
 // import image1 from "D:/Sathish_Practise/src/Images/Dinyosar.jpeg"
-import image2 from "D:/Sathish_Practise/src/Images/ganaoathi.jpg"
+import image2 from "D:/Sathish_Practise/src/Components/Images/ganaoathi.jpg"
 
 
 

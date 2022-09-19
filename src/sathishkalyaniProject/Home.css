@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-color: #e923ad;
+    border-radius: 20px;
+    width: 400px;
+    margin: auto;
+
+}
+
+.main {
+    background-image: url("../Components//Images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+.card {
+    margin: 10px;
+}
+
+h4 {
+    text-align: center;
+    margin: 5px;
+}
+
+.distance {
+    margin: 10px;
+}
+
+.prebg {
+    background-image: url("../Components//Images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    margin: 0px;
+}
+
+.bgcolor {
+    background-color: aqua;
+}
